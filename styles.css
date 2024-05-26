@@ -3,7 +3,6 @@ body {
   font-family: Arial, sans-serif;
   background-color: #FFCD9E;
   color: #333;
-  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 body::-webkit-scrollbar {
@@ -20,7 +19,6 @@ body::-webkit-scrollbar {
   padding: 20px;
   box-sizing: border-box;
   min-height: 100vh;
-  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .container {
@@ -31,7 +29,6 @@ body::-webkit-scrollbar {
   width: 100%;
   box-sizing: border-box;
   text-align: center;
-  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 @media (min-width: 768px) {
@@ -43,14 +40,13 @@ body::-webkit-scrollbar {
 
 .content {
   max-width: 600px;
-  padding: 10px 90px;
-  color: #000;
-
+  padding: 10px 80px;
 }
 
 .content h1 {
   font-size: 2em;
   margin-bottom: 10px;
+  
 }
 
 .content p {
@@ -61,7 +57,7 @@ body::-webkit-scrollbar {
 .content a {
   display: inline-block;
   margin-bottom: 20px;
-  color: #484848;
+  color: #000;
   text-decoration: underline;
 }
 
@@ -98,7 +94,6 @@ body::-webkit-scrollbar {
   outline: none;
 }
 
-
 #register {
   padding: 10px 20px;
   font-size: 1em;
@@ -118,18 +113,10 @@ body::-webkit-scrollbar {
 }
 
 .note {
-  font-size: 0.9em;
   color: #ffffff;
-  /* Free - No Spam - No Data Sharing */
-
-position: absolute;
-width: 344px;
+  width: 344px;
 height: 61px;
-left: 134px;
-top: 479px;
-
-
-
+padding: 10px 20px;
 }
 
 .image-content {
@@ -148,14 +135,14 @@ top: 479px;
 
 footer {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   background-color: #282828;
   color: #fff;
-  padding: 30px 20px;
+  padding: 30px 80px;
+  height: 290px;
   box-sizing: border-box;
-  text-align: center;
+
 }
 
 .footer-left,
@@ -163,10 +150,9 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   font-size: 20px;
   line-height: 160%;
-  margin-bottom: 20px;
+
 }
 
 .footer-left ul {
@@ -177,11 +163,17 @@ footer {
 
 .footer-left ul li {
   margin-bottom: 10px;
+  padding: 1px 80px 5px 60px;
 }
 
 .footer-left ul li a {
   color: #fff;
   text-decoration: none;
+}
+
+.footer-right {
+  align-items: flex-end;
+  padding: 1px 80px 5px 60px;
 }
 
 .footer-right p {
@@ -196,31 +188,4 @@ footer {
 
 .social-media img {
   width: 24px;
-  height: 24px;
-}
-
-/* Media Queries */
-@media (min-width: 768px) {
-  footer {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 30px 80px;
-    height: 290px;
-    text-align: left;
-  }
-
-  .footer-left,
-  .footer-right {
-    align-items: flex-start;
-    margin-bottom: 0;
-  }
-
-  .footer-left ul li {
-    padding: 1px 80px 5px 60px;
-  }
-
-  .footer-right {
-    padding: 1px 80px 5px 60px;
-  }
 }
