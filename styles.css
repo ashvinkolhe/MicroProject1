@@ -250,3 +250,16 @@ footer {
     margin-bottom: 20px; /* Space below the list */
   }
 }
+
+@media(max-width: 300px){
+  #main-content{
+      flex-direction: column;
+  }
+  #main #footer-left{
+      width: 100%;
+  }
+  #main #footer-right{
+      width: 100%;
+  }
+
+}
